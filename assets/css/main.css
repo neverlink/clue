@@ -145,7 +145,6 @@ video {
   box-shadow: 0px 0px 20px grey;
   transform: scale(1.1);
 }
-
 .slider::-webkit-slider-thumb {
   width: 2.5vh;
   height: 2.5vh;
@@ -167,30 +166,6 @@ video {
   background: linear-gradient(180deg, rgba(170,193,240,1) 38%, rgba(226,226,226,1) 100%);
   -moz-appearance: none;
   box-shadow: 1px 1px 10px black;
-}
-input[type=range]::-ms-thumb {
-  width: 2.5vh;
-  height: 2.5vh;
-  cursor: pointer;
-  border-radius: 50%; 
-  background: rgb(170,193,240);
-  background: linear-gradient(180deg, rgba(170,193,240,1) 38%, rgba(226,226,226,1) 100%);
-  -ms-appearance: none;
-  box-shadow: 1px 1px 10px black;
-}
-.credits {
-  color: white;
-  position: absolute;
-  bottom: 20px;
-  left: 10px;
-}
-span, .editor {
-  font-family: 'Maven Pro', Arial;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 1.5vh;
-  color: white;
-  opacity: 0.75;
 }
 /* Overline From Center */
 .hvr-overline-from-center {
