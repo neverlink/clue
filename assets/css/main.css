@@ -158,11 +158,25 @@ video {
   box-shadow: 1px 1px 10px black;
 }
 .slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
+  width: 2.5vh;
+  height: 2.5vh;
   cursor: pointer;
+  appearance: none;
+  border-radius: 50%; 
+  background: rgb(170,193,240);
+  background: linear-gradient(180deg, rgba(170,193,240,1) 38%, rgba(226,226,226,1) 100%);
+  -moz-appearance: none;
+  box-shadow: 1px 1px 10px black;
+}
+input[type=range]::-ms-thumb {
+  width: 2.5vh;
+  height: 2.5vh;
+  cursor: pointer;
+  border-radius: 50%; 
+  background: rgb(170,193,240);
+  background: linear-gradient(180deg, rgba(170,193,240,1) 38%, rgba(226,226,226,1) 100%);
+  -ms-appearance: none;
+  box-shadow: 1px 1px 10px black;
 }
 .credits {
   color: white;
