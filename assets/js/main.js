@@ -1,21 +1,21 @@
 window.onload = () => {
-    bgVideo.volume = 0.05;
-    document.oncontextmenu = () => false;
+    document.getElementById("slider").defaultValue = 20;
+    audio.volume = document.getElementById("slider").value / 1000;
 }
 function toggle(el){
     if (el.className=="button fas fa-play")
     {
+        audio.play();
         el.className="button fas fa-pause";
-        bgVideo.play();
     }
     else
     {
-        bgVideo.pause();
+        audio.pause();
         el.className="button fas fa-play";
     }
     return false;
 }
-window.changeSpeed = function(val)
+window.changeVolume = function(val)
 {
-    bgVideo.volume = val / 1000;
+    audio.volume = val / 1000;
 }

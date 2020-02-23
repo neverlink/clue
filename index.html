@@ -21,7 +21,8 @@
 </head>
 <body>
 	<div class="bgfade overlay">
-		<video id="bgVideo" src="media/background.mp4" loop></video>
+		<video id="background" src="media/background.mp4" mute autoplay loop></video>
+		<audio id="audio" src="media/alright (prod. by kid pretzel).mp3" loop></audio>
 	</div>
 <nav class="wrapper">
 	<div class="title fadetitle">
@@ -37,7 +38,7 @@
 		<button class="button fas fa-play" onclick="toggle(this);"/>
 	</div>
 	<div>
-		<input class="slider fadelinks" type="range" min="0" max="150" step="1" oninput="changeSpeed(this.value)" onchange="changeSpeed(this.value)"/>
+		<input id="slider" class="slider fadelinks" type="range" min="0" max="125" step="1" oninput="changeVolume(this.value)" onchange="changeVolume(this.value)"/>
 	</div>
 </nav>
 </body>
