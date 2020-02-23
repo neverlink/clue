@@ -1,5 +1,5 @@
 window.onload = () => {
-    document.getElementById("slider").defaultValue = 20;
+    document.getElementById("slider").defaultValue = 30;
     audio.volume = document.getElementById("slider").value / 1000;
 }
 function toggle(el){
