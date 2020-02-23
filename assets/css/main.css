@@ -97,7 +97,7 @@ video {
   text-align: center;
   font-size: 3.5vh;
   color: white;
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 1px 1px 6px black;
   padding: 5px;
 }
 .buttonwrapper {
@@ -149,8 +149,7 @@ video {
   cursor: pointer;
   appearance: none;
   border-radius: 50%; 
-  background: rgb(170,193,240);
-  background: linear-gradient(180deg, rgba(170,193,240,1) 38%, rgba(226,226,226,1) 100%);
+  background: rgb(224, 176, 196);
   -webkit-appearance: none;
   box-shadow: 1px 1px 10px black;
 }
@@ -160,8 +159,7 @@ video {
   cursor: pointer;
   appearance: none;
   border-radius: 50%; 
-  background: rgb(170,193,240);
-  background: linear-gradient(180deg, rgba(170,193,240,1) 38%, rgba(226,226,226,1) 100%);
+  background: rgb(224, 176, 196);
   -moz-appearance: none;
   box-shadow: 1px 1px 10px black;
 }
@@ -183,7 +181,7 @@ video {
   right: 51%;
   top: 0px;
   bottom: 20px;
-  background: #aac1f0;
+  background: rgb(224, 176, 196);
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;

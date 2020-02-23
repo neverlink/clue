@@ -1,10 +1,11 @@
 <!---------------------------------------------
-	Editor: https://www.youtube.com/thomvsu
+		Made with love by neverlink! <3
+			 https://never.li/nk
 ---------------------------------------------->
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>ㅤㅤㅤㅤㅤㅤ★彡</title>
+	<title>★彡</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="keywords" content="cluee">
@@ -35,10 +36,10 @@
 	<div class="link grow hvr-overline-from-center"><a class="fab fa-instagram" href="https://www.instagram.com/mimic"></a></div>
 </div>
 	<div class="buttonwrapper fadelinks">
-		<button class="button fas fa-play" onclick="toggle(this);"/>
+		<input id="slider" class="slider fadelinks" type="range" min="0" max="200" step="1" oninput="changeVolume(this.value)" onchange="changeVolume(this.value)"/>
 	</div>
-	<div>
-		<input id="slider" class="slider fadelinks" type="range" min="0" max="150" step="1" oninput="changeVolume(this.value)" onchange="changeVolume(this.value)"/>
+	<div class="buttonwrapper fadelinks">
+		<button class="button fas fa-play" onclick="toggle(this);"/>
 	</div>
 </nav>
 </body>

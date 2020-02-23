@@ -1,5 +1,5 @@
 window.onload = () => {
-    document.getElementById("slider").defaultValue = 30;
+    document.getElementById("slider").defaultValue = 100;
     audio.volume = document.getElementById("slider").value / 1000;
     document.oncontextmenu = () => false;
 }
