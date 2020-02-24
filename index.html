@@ -22,8 +22,10 @@
 </head>
 <body>
 	<div class="bgfade overlay">
-		<video id="background" src="media/background.mp4" mute autoplay loop></video>
-		<audio id="audio" src="media/alright (prod. by kid pretzel).mp3" loop></audio>
+		<video id="background" src="media/background.mp4" preload="auto" mute autoplay loop></video>
+		<audio id="music" preload="auto">
+		    <source id="played" src="media/silence.mp3" type="audio/mp3"/>     
+		</audio>
 	</div>
 <nav class="wrapper">
 	<div class="title fadetitle">
