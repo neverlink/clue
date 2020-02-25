@@ -1,3 +1,24 @@
+.marquee {
+  position:absolute;
+  display: block;
+  height: 2.5vh;
+}
+.marqueetext {
+  display: inline-block;
+  font-size: 2vh; 
+  font-family: 'Maven Pro', 'Arial'; 
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+}
+.marqueetext:hover {
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+  transform: scale(1.1);
+}
  /* Background Fade */
   @keyframes fadebg {
   0%   { opacity: 0;}
@@ -35,12 +56,9 @@ a {
     text-decoration: none;
 }
 body {
-  width:100%;
+  width: 100%;
   height: 100%;
   background-color: black;
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
 }  
 video {
   position: fixed;
@@ -59,7 +77,7 @@ video {
   height: auto;
   width: auto;
   margin: auto;
-  line-height: 0.7;
+  line-height: 0.7; 
 }
 .title {
   width: auto;
@@ -131,7 +149,7 @@ video {
   background: #ffffff;
   outline: none;
   -webkit-appearance: none;
-   box-shadow: 1px 1px 10px black;
+  box-shadow: 1px 1px 10px black;
   -webkit-transition: .4s;
   transition-duration: .4s;
   transition-timing-function: ease-out;
