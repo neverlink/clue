@@ -5,47 +5,41 @@ window.onload = () => {
     player.volume = volumeSlider.value / 1000;
     initializePlayer();
 }
+
 var songs = [
-    "media/alright (prod. by kid pretzel).mp3",
-    "media/knots(kir).mp3",
-    "media/familymart (Xangang).mp3",
-    "media/Facelift ft. dolly [prod. kiryano].mp3",
-    "media/3 checks (prod. maknae).mp3",
-    "media/Paradise Kiss (Prod. mixed matches).mp3",
-    "media/kurtains x whitetrash - devil cry (prod. kurtains).mp3",
-    "media/maxwell (prod. pitfall + tempuraroll + lotchek).mp3",
-    "media/pretty lies (prod. kiryano).mp3",
-    "media/blurry (prod. tomekk & baslle).mp3",
-    "media/tonight (prod. winter).mp3",
-    "media/DREAM OF U (prod. SCARY X OPAL).mp3",
-    "media/mbn.mp3",
-    "media/gone (prod. maknae).mp3",
-    "media/BANKAI (卍解) (ft. sholoh).mp3",
-    "media/goodbye (lovbug).mp3",
+    "media/antisocial.mp3",
+    "media/skit (shinjin).mp3",
+    "media/stalkin me.mp3",
+    "media/control (prod. shinjin).mp3",
+    "media/because of me.mp3",
+    "media/i need a break (prod. pitfall).mp3",
+    "media/gross (prod. kiryano).mp3",
+    "media/time after time (ft. d1v + buffalobang) [eera].mp3",
+    "media/17 again [prod. ddertbAg].mp3",
+    "media/dumb (prod. shinjin).mp3",
+    "media/zee! _ nobody ballad (prod.zee!).mp3",
+    "media/stop trying right now.mp3",
 ];
 
 var songLinks = [
-    "https://soundcloud.com/guardinmusic/alright-prod-by-lil-pretzel",
-    "https://soundcloud.com/kiryano/knots-kiryano",
-    "https://soundcloud.com/sglily/familymart-xangang",
-    "https://soundcloud.com/1yr/facelift-dolly-kiryano",
-    "https://soundcloud.com/kketamine/3-checks-prod-maknae",
-    "https://soundcloud.com/braxtonknight/paradisekiss",
-    "https://soundcloud.com/iconicompound/kurtains-x-whitetrash-devil-cry-prod-kurtains", 
-    "https://soundcloud.com/saturn27/maxwell",
-    "https://soundcloud.com/luvbackpack/pretty-lies-prod-kiryano",
-    "https://soundcloud.com/kketamine/blurry-prod-tommek-baslle",
-    "https://soundcloud.com/chach404/2nite",
-    "https://soundcloud.com/loveboy00/dream-of-u-prod-scary-x-opal",
-    "https://soundcloud.com/p4rkr/it-depends",
-    "https://soundcloud.com/1fns/gone",
-    "https://soundcloud.com/prodelxnce/bankai-1",
-    "https://soundcloud.com/lilkiteshawty/goodbye-lovbug",
+    "https://soundcloud.com/whereisnomu/antisocial",
+    "https://soundcloud.com/gnde/skit",
+    "https://soundcloud.com/kketamine/stalkin-me-prodkket",
+    "https://soundcloud.com/luvbackpack/control-prod-shinjin",
+    "https://soundcloud.com/whereisnomu/because-of-me",
+    "https://soundcloud.com/saturn27/i-need-a-break-prod-pitfall",
+    "https://soundcloud.com/kketamine/gross-prod-kiryano", 
+    "https://soundcloud.com/loveboy00/time-after-time-ft-d1v-buffalobang-eera",
+    "https://soundcloud.com/1yr/17-again-ddertbag",
+    "https://soundcloud.com/luvbackpack/dumb-prod-shinjin",
+    "https://soundcloud.com/1osersclub/zee-nobody-ballad-prodzee",
+    "https://soundcloud.com/okolo02/stop-trying-right-now",
 ];
+
+var playing = Math.floor(Math.random() * songs.length - 1);
 
 function initializePlayer() {
     player.addEventListener('ended', (e) => {
-    playing = Math.floor(Math.random() * songs.length - 1);
     music.src = songs[playing];
     player.load();
     player.play();

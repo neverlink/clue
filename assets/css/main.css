@@ -167,7 +167,7 @@ video {
   cursor: pointer;
   appearance: none;
   border-radius: 50%; 
-  background: rgb(224, 176, 196);
+  background: rgb(166, 224, 195);
   -webkit-appearance: none;
   box-shadow: 1px 1px 10px black;
 }
@@ -177,7 +177,7 @@ video {
   cursor: pointer;
   appearance: none;
   border-radius: 50%; 
-  background: rgb(224, 176, 196);
+  background: rgb(166, 224, 195);
   -moz-appearance: none;
   box-shadow: 1px 1px 10px black;
 }
@@ -199,7 +199,7 @@ video {
   right: 51%;
   top: 0px;
   bottom: 20px;
-  background: rgb(224, 176, 196);
+  background: rgb(166, 224, 195);
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
