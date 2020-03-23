@@ -17,7 +17,7 @@ var songs = [
     "media/time after time (ft. d1v + buffalobang) [eera].mp3",
     "media/17 again [prod. ddertbAg].mp3",
     "media/dumb (prod. shinjin).mp3",
-    "media/zee! _ nobody ballad (prod.zee!).mp3",
+    "media/zee! - nobody ballad (prod.zee!).mp3",
     "media/stop trying right now.mp3",
 ];
 
