@@ -17,7 +17,7 @@ var songs = [
     "media/summoner [bizarius].mp3",
     "media/17 again [prod. ddertbAg].mp3",
     "media/dumb (prod. shinjin).mp3",
-    "media/zee! _ nobody ballad (prod.zee!).mp3",
+    "media/cut off (kiryano glo).mp3",
     "media/stop trying right now.mp3",
 ];
 
@@ -32,7 +32,7 @@ var songLinks = [
     "https://soundcloud.com/loveboy00/summoner-bizarius",
     "https://soundcloud.com/1yr/17-again-ddertbag",
     "https://soundcloud.com/luvbackpack/dumb-prod-shinjin",
-    "https://soundcloud.com/1osersclub/zee-nobody-ballad-prodzee",
+    "https://soundcloud.com/mirounu/cut-off",
     "https://soundcloud.com/okolo02/stop-trying-right-now",
 ];
 
