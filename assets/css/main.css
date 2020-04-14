@@ -167,7 +167,7 @@ video {
   cursor: pointer;
   appearance: none;
   border-radius: 50%; 
-  background: rgb(166, 224, 195);
+  background: rgb(230, 200, 115);
   -webkit-appearance: none;
   box-shadow: 1px 1px 10px black;
 }
@@ -177,7 +177,7 @@ video {
   cursor: pointer;
   appearance: none;
   border-radius: 50%; 
-  background: rgb(166, 224, 195);
+  background: rgb(230, 200, 115);
   -moz-appearance: none;
   box-shadow: 1px 1px 10px black;
 }
