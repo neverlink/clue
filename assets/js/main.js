@@ -30,7 +30,6 @@ var songLinks = [
     "https://soundcloud.com/4ambhx/control",
     "https://soundcloud.com/i9bonsai/trueys-off",
     "https://soundcloud.com/blackwinterwells/doll",
-    "https://soundcloud.com/outby16/honyq",
 ];
 
 var playing = Math.floor(Math.random() * songs.length - 1);
