@@ -17,6 +17,7 @@ var songs = [
     "media/control [prod odel + shigitori].mp3",
     "media/takee my trueys off,, buhbae ++ shojirose.mp3",
     "media/doll feat. blxty, mental.mp3",
+    "media/Heaven over NY & Quanzhou.mp3",
 ];
 
 var songLinks = [
@@ -30,6 +31,7 @@ var songLinks = [
     "https://soundcloud.com/4ambhx/control",
     "https://soundcloud.com/i9bonsai/trueys-off",
     "https://soundcloud.com/blackwinterwells/doll",
+    "https://soundcloud.com/outby16/honyq"
 ];
 
 var playing = Math.floor(Math.random() * songs.length - 1);
