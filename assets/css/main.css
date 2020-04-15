@@ -199,8 +199,8 @@ video {
   right: 51%;
   top: 0px;
   bottom: 20px;
-  background: rgb(166, 224, 195);
-  height: 4px;
+  background: rgb(230, 200, 115);
+  height: 2px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.2s;
