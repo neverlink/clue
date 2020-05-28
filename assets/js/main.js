@@ -7,31 +7,33 @@ window.onload = () => {
 }
 
 var songs = [
-    "media/valentine +pitfall (maknae).mp3",
-    "media/distant( glo sg37).mp3",
-    "media/defense + pitfall, midwxst (pr1ze kuru).mp3",
+    "media/go down.mp3",
+    "media/life is pain.mp3",
+    "media/nthn.mp3",
+    "media/trendsetta.mp3",
+    "media/utilize.mp3",
     "media/head on my shoulders.mp3",
-    "media/swear (ft. uknoxoxo) [opal_sg37].mp3",
-    "media/in my sights(prod. thr6x).mp3",
-    "media/for you (kir).mp3",
-    "media/control [prod odel + shigitori].mp3",
-    "media/takee my trueys off,, buhbae ++ shojirose.mp3",
-    "media/doll feat. blxty, mental.mp3",
-    "media/Heaven over NY & Quanzhou.mp3",
+    "media/decide between me and the moon.mp3",
+    "media/she chose the moon.mp3",
+    "media/3D.mp3",
+    "media/walmart.mp3",
+    "media/fly or fall.mp3",
+    "media/trying++cry4help.mp3",
 ];
 
 var songLinks = [
-    "https://soundcloud.com/gnde/valentine",
-    "https://soundcloud.com/kiryano/distant-glo-sg-37",
-    "https://soundcloud.com/kevinsavior/defense-pitfall-midwxst-pr1ze-kuru",
-    "https://soundcloud.com/sglily/shoulder",
-    "https://soundcloud.com/loveboy00/swear-ft-uknoxoxo-opalsg37",
-    "https://soundcloud.com/kketamine/in-my-sightsprod-thr6x",
-    "https://soundcloud.com/kiryano/kiryano-for-you-prod-kiryano",
-    "https://soundcloud.com/4ambhx/control",
-    "https://soundcloud.com/i9bonsai/trueys-off",
-    "https://soundcloud.com/blackwinterwells/doll",
-    "https://soundcloud.com/outby16/honyq"
+	"https://soundcloud.com/wido123456789/whaaat-whttt",
+	"https://soundcloud.com/1glaive/life-is-pain",
+	"https://soundcloud.com/i9bonsai/nthn",
+	"https://soundcloud.com/slowsilver03/trendsetta",
+	"https://soundcloud.com/7serene/kiryano-emotionals3k-miso-maknae-psst",
+	"https://soundcloud.com/sglily/shoulder",
+	"https://soundcloud.com/okoloarchive/decide-between-me-and-da-moon",
+	"https://soundcloud.com/okoloarchive/okolo-she-chose-da-moon",
+	"https://soundcloud.com/lilcloth/uknoxoxo-vs-misogi-3d-clairvoyant",
+	"https://soundcloud.com/4ambhx/walmart",
+	"https://soundcloud.com/sglily/fly",
+	"https://soundcloud.com/funeral/cry4help",
 ];
 
 var playing = Math.floor(Math.random() * songs.length - 1);

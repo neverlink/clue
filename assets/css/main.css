@@ -1,24 +1,9 @@
-.marquee {
-  position:absolute;
-  display: block;
-  height: 2.5vh;
+:root {
+  --overline-color: #ef1b00;
+  --slider-thumb-color: #ef1b00;
+  --slider-color: white;
 }
-.marqueetext {
-  display: inline-block;
-  font-size: 2vh; 
-  font-family: 'Maven Pro', 'Arial'; 
-  color: white;
-  text-shadow: 2px 2px 8px black;
-  -webkit-transition: .4s;
-  transition-duration: .4s;
-  transition-timing-function: ease-out;
-}
-.marqueetext:hover {
-  -webkit-transition: .4s;
-  transition-duration: .4s;
-  transition-timing-function: ease-out;
-  transform: scale(1.1);
-}
+
  /* Background Fade */
   @keyframes fadebg {
   0%   { opacity: 0;}
@@ -146,7 +131,7 @@ video {
   width: 100%;
   height: 1.5vh;
   border-radius: 5px;   
-  background: #ffffff;
+  background: var(--slider-color);
   outline: none;
   -webkit-appearance: none;
   box-shadow: 1px 1px 10px black;
@@ -158,7 +143,7 @@ video {
   -webkit-transition: .4s;
   transition-duration: .4s;
   transition-timing-function: ease-out;
-  box-shadow: 0px 0px 20px grey;
+  box-shadow: 0px 0px 20px white;
   transform: scale(1.1);
 }
 .slider::-webkit-slider-thumb {
@@ -167,7 +152,7 @@ video {
   cursor: pointer;
   appearance: none;
   border-radius: 50%; 
-  background: rgb(230, 200, 115);
+  background: var(--slider-thumb-color);
   -webkit-appearance: none;
   box-shadow: 1px 1px 10px black;
 }
@@ -177,7 +162,7 @@ video {
   cursor: pointer;
   appearance: none;
   border-radius: 50%; 
-  background: rgb(230, 200, 115);
+  background: var(--slider-thumb-color);
   -moz-appearance: none;
   box-shadow: 1px 1px 10px black;
 }
@@ -199,7 +184,7 @@ video {
   right: 51%;
   top: 0px;
   bottom: 20px;
-  background: rgb(230, 200, 115);
+  background: var(--overline-color);
   height: 2px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -217,4 +202,25 @@ video {
 }
 .grow:hover { 
     transform: scale(1.15);
+}
+.marquee {
+  position:absolute;
+  display: block;
+  height: 2.5vh;
+}
+.marqueetext {
+  display: inline-block;
+  font-size: 2vh; 
+  font-family: 'Maven Pro', 'Arial'; 
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+}
+.marqueetext:hover {
+  -webkit-transition: .4s;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+  transform: scale(1.1);
 }
