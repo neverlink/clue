@@ -1,6 +1,6 @@
 :root {
-  --overline-color: #ef1b00;
-  --slider-thumb-color: #ef1b00;
+  --overline-color: rgb(229, 174, 178);
+  --slider-thumb-color: rgb(229, 174, 178);
   --slider-color: white;
 }
 
@@ -45,7 +45,7 @@ body {
   height: 100%;
   background-color: black;
 }  
-video {
+.background {
   position: fixed;
   top: 50%;
   left: 50%;
