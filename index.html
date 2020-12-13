@@ -57,9 +57,9 @@
 		<input id="volumeSlider" class="slider fadelinks" type="range" min="0" max="200" step="1" oninput="changeVolume(this.value)" onchange="changeVolume(this.value)"/>
 	</div>
 	<div class="buttonwrapper fadelinks">
-		<button class="button fas fa-step-backward" onclick="changeSong(-1);"/>
+		<button class="button fas fa-step-backward" onclick="incrementCurrentSong(-1);"/>
 		<button class="button fas fa-play" onclick="playPause(this);"/>
-		<button class="button fas fa-step-forward" onclick="changeSong(1);"/>
+		<button class="button fas fa-step-forward" onclick="incrementCurrentSong(1);"/>
 	</div>
 		<marquee class="marquee"><a class="marqueetext" id="nowPlaying" href=""/></a></marquee>
 	</div>
