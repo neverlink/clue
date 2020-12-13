@@ -40,10 +40,10 @@ var playing = Math.floor(Math.random() * songs.length - 1);
 
 function initializePlayer() {
     player.addEventListener('ended', (e) => {
-    music.src = songs[playing];
-    player.load();
-    player.play();
-    updateMarquee();
+	    music.src = songs[playing];
+	    player.load();
+	    player.play();
+	    updateMarquee();
     }, false);
 }
 function changeVolume (val) {
@@ -52,7 +52,7 @@ function changeVolume (val) {
 function playPause(el) {
     if (el.className == "button fas fa-play")
     {
-        player.play();
+        incrementCurrentSong(0);
         el.className = "button fas fa-pause";
     }
     else
@@ -62,7 +62,7 @@ function playPause(el) {
     }
     return false;
 }
-function changeSong(count) {
+function incrementCurrentSong(count) {
     playing = (playing + count) % songs.length;
     music.src = songs[playing];
     player.load();
@@ -70,7 +70,8 @@ function changeSong(count) {
     updateMarquee();
 }
 function updateMarquee() {
-    nowPlaying.innerHTML = playing + 1 + ". " + songs[playing].substring(6, songs[playing].length - 4);
+    // nowPlaying.innerHTML = playing + 1 + ". " + songs[playing].substring(6, songs[playing].length - 4);
+    nowPlaying.innerHTML = String(songs[playing].substring(6, songs[playing].length - 4));
     nowPlaying.href = songLinks[playing];
     nowPlaying.target = "_blank"; 
 }
