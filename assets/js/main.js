@@ -65,6 +65,7 @@ function playPause(el) {
 
 function incrementCurrentSong(count) {
     playing = (playing + count) % songs.length;
+    if (playing < 0) { playing = songs.length - 1 }
     music.src = songs[playing];
     player.load();
 }
