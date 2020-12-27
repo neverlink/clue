@@ -17,7 +17,7 @@ var songs = [
     "media/its hard.mp3",
     "media/msg.mp3",
     "media/qpid.mp3",
-    "media/sheaskedwhatmylifeislike.mp3",
+    "media/sheaskedwhatmylifeislike.mp3"
 ];
 
 var songLinks = [
@@ -32,7 +32,7 @@ var songLinks = [
 	"https://soundcloud.com/saturn27/qpid",
 	"https://soundcloud.com/funeral/antichrist",
 	"https://soundcloud.com/whereisnomu/comfortable",
-	"https://soundcloud.com/kiryano/nvme-prodd-winter",
+	"https://soundcloud.com/kiryano/nvme-prodd-winter"
 ];
 
 var playing = Math.floor(Math.random() * songs.length - 1);
