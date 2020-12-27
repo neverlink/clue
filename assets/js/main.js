@@ -6,18 +6,18 @@ window.onload = () => {
 }
 
 var songs = [
-    "media/spring talent show.mp3",
-    "media/antichrist.mp3",
     "media/better.mp3",
-    "media/circle small.mp3",
-    "media/comfortable.mp3",
     "media/do somethink new.mp3",
+    "media/sheaskedwhatmylifeislike.mp3",
     "media/emo plugg.mp3",
+    "media/spring talent show.mp3",
     "media/i can't keep anything in place.mp3",
+    "media/circle small.mp3",
     "media/its hard.mp3",
-    "media/msg.mp3",
     "media/qpid.mp3",
-    "media/sheaskedwhatmylifeislike.mp3"
+    "media/antichrist.mp3",
+    "media/comfortable.mp3",
+    "media/msg.mp3"
 ];
 
 var songLinks = [
