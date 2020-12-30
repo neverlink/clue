@@ -17,7 +17,8 @@ var songs = [
     "media/qpid.mp3",
     "media/antichrist.mp3",
     "media/comfortable.mp3",
-    "media/msg.mp3"
+    "media/msg.mp3",
+    "media/utilize.mp3"
 ];
 
 var songLinks = [
@@ -32,7 +33,8 @@ var songLinks = [
 	"https://soundcloud.com/saturn27/qpid",
 	"https://soundcloud.com/funeral/antichrist",
 	"https://soundcloud.com/whereisnomu/comfortable",
-	"https://soundcloud.com/kiryano/nvme-prodd-winter"
+	"https://soundcloud.com/kiryano/nvme-prodd-winter",
+	"https://soundcloud.com/7serene/kiryano-emotionals3k-miso-maknae-psst"
 ];
 
 var playing = Math.floor(Math.random() * songs.length - 1);
