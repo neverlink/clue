@@ -3,23 +3,28 @@
   --slider-thumb-color: rgb(200, 100, 50);
   --slider-color: lightgrey;
 }
-
- /* Background Fade */
-  @keyframes fadebg {
+a {
+    text-decoration: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+} 
+@keyframes fadebg {
   0%   { opacity: 0;}
   100% {opacity: 0.4;}
 }  
 .bgfade {
-   animation-timing-function:ease-in;
+  animation-timing-function:ease-in;
   animation-name: fadebg;
   animation-duration: 2.5s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
-   /* Text - Links Fade */
-   @keyframes fadetext {
-   0%   { opacity: 0;}
-   100% {opacity: 1;}
+@keyframes fadetext {
+  0%   { opacity: 0;}
+  100% {opacity: 1;}
 }
 .fadetitle {
   animation-timing-function:ease-in;
@@ -37,15 +42,18 @@
   animation-delay: 1.5s;
   opacity: 0; 
 }
-a {
-    text-decoration: none;
+.bgimg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vw;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
 }
-body {
-  width: 100%;
-  height: 100%;
-  background-color: black;
-}  
-.background {
+.bgvid {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -166,7 +174,6 @@ body {
   -moz-appearance: none;
   box-shadow: 1px 1px 10px black;
 }
-/* Overline From Center */
 .hvr-overline-from-center {
   display: inline-block;
   vertical-align: middle;
@@ -198,10 +205,10 @@ body {
   right: 0;
 }
 .grow { 
-    transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 .grow:hover { 
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 .marquee {
   position:absolute;
