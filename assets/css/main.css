@@ -42,7 +42,7 @@ body {
   animation-delay: 1.5s;
   opacity: 0; 
 }
-.bgimg {
+.bgvid {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -53,7 +53,7 @@ body {
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
 }
-.bgvid {
+.bgimg {
   position: fixed;
   top: 50%;
   left: 50%;
