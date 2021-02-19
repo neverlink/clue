@@ -1,4 +1,6 @@
 window.onload = () => {
+	new Date().getHours() <= 12 ? background.src = "media/morning.mp4" : background.src = "media/afternoon.mp4"
+
     document.oncontextmenu = () => false;
     volumeSlider.defaultValue = 100;
     player.volume = volumeSlider.value / 1000;
@@ -6,35 +8,39 @@ window.onload = () => {
 }
 
 var songs = [
-    "media/better.mp3",
-    "media/do somethink new.mp3",
-    "media/sheaskedwhatmylifeislike.mp3",
-    "media/emo plugg.mp3",
-    "media/spring talent show.mp3",
-    "media/i can't keep anything in place.mp3",
-    "media/circle small.mp3",
-    "media/its hard.mp3",
-    "media/qpid.mp3",
-    "media/antichrist.mp3",
-    "media/comfortable.mp3",
-    "media/msg.mp3",
-    "media/utilize.mp3"
+    "media/we did it... together.mp3",
+    "media/repeat.mp3",
+    "media/from the start.mp3",
+    "media/gettingtomyhead.mp3",
+    "media/pave low.mp3",
+    "media/2022 my year fr.mp3",
+    "media/professionals.mp3",
+    "media/burglary.mp3",
+    "media/head on my shoulders.mp3",
+    "media/help me.mp3",
+    "media/its all a waste.mp3",
+    "media/make u feel.mp3",
+    "media/impatient.mp3",
+    "media/velvet.mp3",
+    "media/angel.mp3"
 ];
 
 var songLinks = [
-	"https://soundcloud.com/mental/better",
-	"https://soundcloud.com/wido123456789/just-enjoy-okei",
-	"https://soundcloud.com/ericdoa/sawmlil",
-	"https://soundcloud.com/kiryano/fade-w-kket-draft-1",
-	"https://soundcloud.com/emotegi/talent-show",
-	"https://soundcloud.com/funeral/ickaip",
-	"https://soundcloud.com/kketamine/circle-small-w-kiryano-prod",
-	"https://soundcloud.com/oaf1/smile",
-	"https://soundcloud.com/saturn27/qpid",
-	"https://soundcloud.com/funeral/antichrist",
-	"https://soundcloud.com/whereisnomu/comfortable",
-	"https://soundcloud.com/kiryano/nvme-prodd-winter",
-	"https://soundcloud.com/7serene/kiryano-emotionals3k-miso-maknae-psst"
+    "https://soundcloud.com/wido123456789/wedidit",
+    "https://soundcloud.com/mental/rep",
+    "https://soundcloud.com/d1vwv/from-the-start-loveboy-prod-with3r",
+    "https://soundcloud.com/funeral/gtmh",
+    "https://soundcloud.com/kketamine/pave-low-w-kiryano-1",
+    "https://soundcloud.com/saturn27/2022-my-year-fr",
+    "https://soundcloud.com/prodpitfall/professionals-ft-tropes-dltzk",
+    "https://soundcloud.com/novaganghellsing/burglary",
+    "https://soundcloud.com/sglily/shoulder",
+    "https://soundcloud.com/rosesleeves/helpme",
+    "https://soundcloud.com/ericdoa/iaaw",
+    "https://soundcloud.com/d1vwv/make-u-feel-prod-skressiankon",
+    "https://soundcloud.com/rosesleeves/impatient",
+    "https://soundcloud.com/lil4c/velvet",
+    "https://soundcloud.com/n_o1se/kketamine-angel-ft-kiryano-prod-maknae"
 ];
 
 var playing = Math.floor(Math.random() * songs.length - 1);
