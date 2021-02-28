@@ -1,5 +1,5 @@
 window.onload = () => {
-	new Date().getHours() <= 12 ? background.src = "media/morning.mp4" : background.src = "media/afternoon.mp4"
+	new Date().getHours() <= 12 ? background.src = "https://clu.ee/media/morning.mp4" : background.src = "https://clu.ee/media/afternoon.mp4"
 
     document.oncontextmenu = () => false;
     volumeSlider.defaultValue = 100;
