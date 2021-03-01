@@ -22,7 +22,8 @@ var songs = [
     "media/make u feel.mp3",
     "media/impatient.mp3",
     "media/velvet.mp3",
-    "media/angel.mp3"
+    "media/angel.mp3",
+    "media/seventeen.mp3"
 ];
 
 var songLinks = [
@@ -40,7 +41,8 @@ var songLinks = [
     "https://soundcloud.com/d1vwv/make-u-feel-prod-skressiankon",
     "https://soundcloud.com/rosesleeves/impatient",
     "https://soundcloud.com/lil4c/velvet",
-    "https://soundcloud.com/n_o1se/kketamine-angel-ft-kiryano-prod-maknae"
+    "https://soundcloud.com/n_o1se/kketamine-angel-ft-kiryano-prod-maknae",
+    "https://soundcloud.com/dltzk/seventeen"
 ];
 
 var playing = Math.floor(Math.random() * songs.length - 1);
