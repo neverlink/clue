@@ -3,47 +3,52 @@
 <head>
 	<title>ミ☆･ﾟ*｡☆ ･ ﾟ ｡ ･</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="keywords" content="clue">
-	<link rel="shortcut icon" type="image/jpg" href="../media/avatar.jpg"/>
-	<link rel="stylesheet" href="../assets/css/main.css?version=1.3"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="../nk/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../nk/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<link rel="stylesheet" href="../nk/assets/css/main.css?version=1.3" />
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
 	<meta name="og:title" content="clue"/>
 	<meta name="og:description" content="ethereal"/>
 	<meta name="og:image" content="https:/clu.ee/media/avatar.jpg"/>
 	<meta name="theme-color" content="#6464f5">
 </head>
 <script type="text/javascript">
+	console.print = function (...args) { // console.print: console.log without filename/line number
+		queueMicrotask (console.log.bind (console, ...args));
+	}
 	document.addEventListener("DOMContentLoaded", function() {
 		new Date().getHours() <= 12 ? background.src = "../media/morning.mp4" : background.src = "../media/afternoon.mp4";
-		
+
 		window.purgeRunning = false;
 		authorID.value = localStorage.getItem('authorID')
 		targetID.value = localStorage.getItem('targetID')
 		authCookie.value = localStorage.getItem('authCookie')
-		
 		console.print(`
-		ミ☆･ﾟ*｡☆ ･ ﾟ ｡ ･
-		
-		Getting the Authorization Cookie 
-		1. Open Discord, Ctrl+Shift+I -> Network tab
-		2. Send a message
-		3. Click on the latest request
-		4. Copy the value of "authorization" in the Request Headers
-		
-		Finding User/Server/Channel IDs
-		Under Appearance settings, enable Developer mode
-		Right click any User/Server/Channel and Copy ID
-		For DM channels just use your browser and get it from the url
-		
-		ミ☆･ﾟ*｡☆ ･ ﾟ ｡ ･
-		`)
+							ミ☆･ﾟ*｡☆ ･ ﾟ ｡ ･
+
+Getting the Authorization Cookie 
+	1. Open Discord, Ctrl+Shift+I -> Network tab
+	2. Send a message
+	3. Click on the latest request
+	4. Copy the value of "authorization" in the Request Headers
+
+Finding User/Server/Channel IDs
+	Under Appearance settings, enable Developer mode
+	Right click any User/Server/Channel and Copy ID
+	For DM channels just use your browser and get it from the url
+
+							ミ☆･ﾟ*｡☆ ･ ﾟ ｡ ･
+										`)
 	});
-	console.print = function (...args) { // console.print: console.log without filename/line number
-		queueMicrotask (console.log.bind (console, ...args));
-	}
 	function cacheFields() {
 		localStorage.setItem('authorID', authorID.value);
 		localStorage.setItem('targetID', targetID.value);
@@ -66,14 +71,15 @@
 		return new Date(message["timestamp"]).toLocaleString();
 	}
 	async function startPurge() {
-		purgeRunning = true;
 		cacheFields();
+		purgeRunning = true;
 		var delCount = 1;
 		do {
 			var params = `author_id=${authorID.value}&offset=${delCount}&include_nsfw=true`;
 			await makeRequest("GET", `/api/v8/${targetSelector.value}/${targetID.value}/messages/search?${params}`, true)
 			.then(async function (json) {
 				for (var msgIter = 0; msgIter < json["messages"].length; msgIter++, delCount++) {
+					if (!purgeRunning) { return; }
 					totalResults = json["total_results"];
 					message = json["messages"][msgIter][0];
 					timestamp = await deleteAndGetTimestamp(message);
@@ -82,7 +88,12 @@
 					await sleep(1000);
 				}
 			});
-		} while (totalResults > 0);
+		} while (purgeRunning && totalResults > 0);
+		stopPurge();
+		console.print("Done!");
+	}
+	function stopPurge() {
+		console.print("Stopping...")
 		purgeRunning = false;
 	}
 </script>
@@ -164,7 +175,7 @@
 				<option value="channels">Channel</option>
 			</select>
 			<button type="button" class="btn-stop" onclick="stopPurge()">Stop</button>
-			<button type="button" class="btn-start" onclick="startPurge()">Start</button>
+			<button type="button" class="btn-start" onclick="if(!purgeRunning) {startPurge();}">Start</button>
 		</div>
 		<p class="fadelinks">Messages are logged to the console</p>
 		<p class="fadelinks">To export, Right click -> Save as</p>
