@@ -6,41 +6,33 @@ window.onload = () => {
 }
 
 var songs = [
-    "media/we did it... together.mp3",
-    "media/repeat.mp3",
-    "media/from the start.mp3",
-    "media/gettingtomyhead.mp3",
-    "media/pave low.mp3",
-    "media/2022 my year fr.mp3",
-    "media/professionals.mp3",
-    "media/burglary.mp3",
-    "media/head on my shoulders.mp3",
-    "media/help me.mp3",
-    "media/its all a waste.mp3",
-    "media/make u feel.mp3",
-    "media/impatient.mp3",
-    "media/velvet.mp3",
-    "media/angel.mp3",
-    "media/seventeen.mp3"
+    "media/let down.mp3",
+    "media/winter.mp3",
+    "media/letz 5hake.mp3",
+    "media/shooting star.mp3",
+    "media/infectuous.mp3",
+    "media/biz.mp3",
+    "media/alive.mp3",
+    "media/smile.mp3",
+    "media/emo plugg.mp3",
+    "media/seventeen.mp3",
+    "media/feels.mp3",
+    "media/so it seems.mp3"
 ];
 
 var songLinks = [
-    "https://soundcloud.com/wido123456789/wedidit",
-    "https://soundcloud.com/mental/rep",
-    "https://soundcloud.com/d1vwv/from-the-start-loveboy-prod-with3r",
-    "https://soundcloud.com/funeral/gtmh",
-    "https://soundcloud.com/kketamine/pave-low-w-kiryano-1",
-    "https://soundcloud.com/saturn27/2022-my-year-fr",
-    "https://soundcloud.com/prodpitfall/professionals-ft-tropes-dltzk",
-    "https://soundcloud.com/novaganghellsing/burglary",
-    "https://soundcloud.com/sglily/shoulder",
-    "https://soundcloud.com/rosesleeves/helpme",
-    "https://soundcloud.com/ericdoa/iaaw",
-    "https://soundcloud.com/d1vwv/make-u-feel-prod-skressiankon",
-    "https://soundcloud.com/rosesleeves/impatient",
-    "https://soundcloud.com/lil4c/velvet",
-    "https://soundcloud.com/n_o1se/kketamine-angel-ft-kiryano-prod-maknae",
-    "https://soundcloud.com/dltzk/seventeen"
+    "https://soundcloud.com/dltzk/let-down",
+    "https://soundcloud.com/5vexe/winter-ft-ggravee-odece-northeast-lights",
+    "https://soundcloud.com/saturn27/letz-5hake",
+    "https://soundcloud.com/dltzk/1aa",
+    "https://soundcloud.com/prodpitfall/infectious",
+    "https://soundcloud.com/emotionals/biz",
+    "https://soundcloud.com/winter/alive-3",
+    "https://soundcloud.com/lov-bug/kiryano-smile-prod-lovbug-kiryano",
+    "https://soundcloud.com/kiryano/fade-w-kket-draft-1",
+    "https://soundcloud.com/winter/so-it-seems",
+    "https://soundcloud.com/dltzk/seventeen",
+    "https://soundcloud.com/7serene/feels"
 ];
 
 var playing = Math.floor(Math.random() * songs.length - 1);

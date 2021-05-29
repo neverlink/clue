@@ -1,5 +1,5 @@
 :root {
-  --theme-color: rgb(206 143 159);
+  --theme-color: rgb(70, 150, 180);
   --slider-color: lightgrey;
 }
 a {
@@ -46,6 +46,17 @@ body {
   top: 50%;
   left: 50%;
   height: 100%;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+}
+.bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100vw;
+  height: 100vw;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
 }

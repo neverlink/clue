@@ -16,19 +16,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
 	<script type="text/javascript" src="assets/js/music.js" defer></script>
 	<meta name="og:card" content="summary"/>
-    <meta name="og:title" content="clue"/>
+    <meta name="og:title" content="kuru"/>
     <meta name="og:description" content="ethereal"/>
-    <meta name="og:image" content="https://clu.ee/media/avatar.jpg"/>
+    <meta name="og:image" content="https://kuru.rip/media/avatar.jpg"/>
 	<meta name="theme-color" content="#6464f5">
 </head>
 <script type="text/javascript" defer>
-	document.addEventListener("DOMContentLoaded", function() {
-		new Date().getHours() <= 12 ? background.src = "../media/morning.mp4" : background.src = "../media/afternoon.mp4";
-	});
+	// document.addEventListener("DOMContentLoaded", function() {
+		// new Date().getHours() <= 12 ? background.src = "../media/morning.mp4" : background.src = "../media/afternoon.mp4";
+	// });
 </script>
 <body>
 	<div class="bgfade overlay">
-		<video id="background" class="background" autoplay muted loop></video>
+		<video id="background" class="background" autoplay muted loop src="media/background.mp4"></video>
 		<audio id="player" preload="auto">
 		    <source id="music" type="audio/mp3"/>     
 		</audio>
