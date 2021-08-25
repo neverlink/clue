@@ -6,6 +6,7 @@ window.onload = () => {
 }
 
 var songs = [
+<<<<<<< HEAD
     "media/end of time.mp3",
     "media/designer talk.mp3",
     "media/nothings fading.mp3",
@@ -18,6 +19,20 @@ var songs = [
     "media/seventeen.mp3",
     "media/unhappy ending.mp3",
     "media/jb x shinjin.mp3"
+=======
+    "media/let down.mp3",
+    "media/winter.mp3",
+    "media/letz 5hake.mp3",
+    "media/shooting star.mp3",
+    "media/infectuous.mp3",
+    "media/biz.mp3",
+    "media/alive.mp3",
+    "media/smile.mp3",
+    "media/emo plugg.mp3",
+    "media/seventeen.mp3",
+    "media/feels.mp3",
+    "media/so it seems.mp3"
+>>>>>>> 3551796b82551c316f25cbf9658c459a64f02e41
 ];
 
 var songLinks = [
