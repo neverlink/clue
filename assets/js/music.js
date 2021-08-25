@@ -6,7 +6,7 @@ window.onload = () => {
 }
 
 var songs = [
-    "media/stay (shinjin).mp3"
+    "media/stay (shinjin).mp3",
     "media/at the end of time.mp3",
     "media/designer talk.mp3",
     "media/nothings fading.mp3",
@@ -15,7 +15,7 @@ var songs = [
     "media/idk.mp3",
     "media/unhappy ending.mp3",
     "media/sense.mp3",
-    "media/tycb.mp3"    ,
+    "media/tycb.mp3"
 ];
 
 var songLinks = [
