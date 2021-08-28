@@ -15,22 +15,23 @@ var songs = [
     "media/idk.mp3",
     "media/unhappy ending.mp3",
     "media/sense.mp3",
-    "media/tycb.mp3"
+    "media/tycb.mp3",
+    "media/dgaf.mp3"
 ];
 
 var songLinks = [
-    "https://soundcloud.com/dltzk/let-down",
-    "https://soundcloud.com/5vexe/winter-ft-ggravee-odece-northeast-lights",
-    "https://soundcloud.com/saturn27/letz-5hake",
-    "https://soundcloud.com/dltzk/1aa",
-    "https://soundcloud.com/prodpitfall/infectious",
-    "https://soundcloud.com/emotionals/biz",
-    "https://soundcloud.com/winter/alive-3",
-    "https://soundcloud.com/lov-bug/kiryano-smile-prod-lovbug-kiryano",
-    "https://soundcloud.com/kiryano/fade-w-kket-draft-1",
-    "https://soundcloud.com/winter/so-it-seems",
-    "https://soundcloud.com/dltzk/seventeen",
-    "https://soundcloud.com/7serene/feels"
+    "https://soundcloud.com/ivvyleague/jb-x-shinjin",
+    "https://soundcloud.com/7serene/at-the-end-of-time-wavypang",
+    "https://soundcloud.com/polar333/designer-talk",
+    "https://soundcloud.com/kiryano/nothings-fading-taylor-morgan-saint-tomorrow",
+    "https://soundcloud.com/bydion/met",
+    "https://soundcloud.com/roxas358/whatumean",
+    "https://soundcloud.com/eruesudi/idkprodlyustradeliverthecrush",
+    "https://soundcloud.com/kggn/unhappy-ending-dltzk",
+    "https://soundcloud.com/misoo74/nch",
+    "https://soundcloud.com/7serene/things-you-cant-believe",
+    "https://soundcloud.com/kggn/unhappy-ending-dltzk",
+    "https://soundcloud.com/kketamine/kketvict1m-dgafcashapp-prod-kket"
 ];
 
 var playing = Math.floor(Math.random() * songs.length - 1);
