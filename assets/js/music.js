@@ -11,7 +11,7 @@ var songs = [
     "media/designer talk.mp3",
     "media/nothings fading.mp3",
     "media/met.mp3",
-    "media/whatumean.mp3",
+    "media/what u mean.mp3",
     "media/idk.mp3",
     "media/unhappy ending.mp3",
     "media/sense.mp3",
