@@ -30,7 +30,6 @@ var songLinks = [
     "https://soundcloud.com/kggn/unhappy-ending-dltzk",
     "https://soundcloud.com/misoo74/nch",
     "https://soundcloud.com/7serene/things-you-cant-believe",
-    "https://soundcloud.com/kggn/unhappy-ending-dltzk",
     "https://soundcloud.com/kketamine/kketvict1m-dgafcashapp-prod-kket"
 ];
 
