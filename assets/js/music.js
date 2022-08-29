@@ -6,31 +6,19 @@ window.onload = () => {
 }
 
 var songs = [
-    "media/stay (shinjin).mp3",
-    "media/at the end of time.mp3",
-    "media/designer talk.mp3",
-    "media/nothings fading.mp3",
-    "media/met.mp3",
-    "media/what u mean.mp3",
-    "media/idk.mp3",
-    "media/unhappy ending.mp3",
-    "media/sense.mp3",
-    "media/tycb.mp3",
-    "media/dgaf.mp3"
+    "media/my toy.mp3",
+    "media/i hate you i love you.mp3",
+    "media/your name.mp3",
+    "media/autumn wind.mp3",
+    "media/von.mp3"
 ];
 
 var songLinks = [
-    "https://soundcloud.com/ivvyleague/jb-x-shinjin",
-    "https://soundcloud.com/7serene/at-the-end-of-time-wavypang",
-    "https://soundcloud.com/polar333/designer-talk",
-    "https://soundcloud.com/kiryano/nothings-fading-taylor-morgan-saint-tomorrow",
-    "https://soundcloud.com/bydion/met",
-    "https://soundcloud.com/roxas358/whatumean",
-    "https://soundcloud.com/eruesudi/idkprodlyustradeliverthecrush",
-    "https://soundcloud.com/kggn/unhappy-ending-dltzk",
-    "https://soundcloud.com/misoo74/nch",
-    "https://soundcloud.com/7serene/things-you-cant-believe",
-    "https://soundcloud.com/kketamine/kketvict1m-dgafcashapp-prod-kket"
+    "https://soundcloud.com/wazmusic/dvrst-my-toy",
+    "https://soundcloud.com/wazmusic/dvrst-i-hate-you-i-love-you",
+    "https://soundcloud.com/wazmusic/your-name",
+    "https://soundcloud.com/wazmusic/autumn-wind",
+    "https://www.youtube.com/watch?v=FTmWnjNtvc8"
 ];
 
 var playing = Math.floor(Math.random() * songs.length - 1);
