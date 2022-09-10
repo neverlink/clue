@@ -21,11 +21,6 @@
     <meta name="og:image" content="https://clu.ee/media/avatar.jpg"/>
 	<meta name="theme-color" content="#6464f5">
 </head>
-<script type="text/javascript" defer>
-	// document.addEventListener("DOMContentLoaded", function() {
-		// new Date().getHours() <= 12 ? background.src = "../media/morning.mp4" : background.src = "../media/afternoon.mp4";
-	// });
-</script>
 <body>
 	<div class="bgfade overlay">
 		<img id="background" autoplay muted loop src="media/background.gif"></img>
@@ -40,20 +35,20 @@
 	<div class="menu fadelinks">
 		<div class="link grow hvr-overline-from-center"><a class="fab fa-youtube" href="https://youtube.com/cluee" target="_blank"></a></div>
 		<div class="link grow hvr-overline-from-center"><a class="fab fa-soundcloud" href="https://soundcloud.com/age" target="_blank"></a></div>
-		<div class="link grow hvr-overline-from-center"><a class="fab fa-twitter" href="https://twitter.com/ashes" target="_blank"></a></div>	
+		<div class="link grow hvr-overline-from-center"><a class="fab fa-twitter" href="https://twitter.com/exprt_" target="_blank"></a></div>	
 		<div class="link grow hvr-overline-from-center"><a class="fas fa-tshirt" href="https://kill4love.rip" target="_blank"></a></div>
 		<div class="link grow hvr-overline-from-center"><a class="fab fa-twitch" href="https://twitch.tv/picture" target="_blank"></a></div>
 		<div class="link grow hvr-overline-from-center"><a class="fab fa-instagram" href="https://instagram.com/mimic" target="_blank"></a></div>
 	</div>
 		<div class="buttonwrapper fadelinks">
-			<input id="volumeSlider" class="slider fadelinks" type="range" min="0" max="200" step="1" oninput="changeVolume(this.value)" onchange="changeVolume(this.value)"/>
+			<input id="volumeSlider" class="slider fadelinks" type="range" min="0" max="200" step="1">
 		</div>
 		<div class="buttonwrapper fadelinks">
-			<button class="button fas fa-step-backward" onclick="incrementCurrentSong(-1);playSong();"/>
-			<button class="button fas fa-play" onclick="playPause(this);"/>
-			<button class="button fas fa-step-forward" onclick="incrementCurrentSong(1);playSong();"/>
+			<button id="playPrevBtn" class="button fas fa-step-backward">
+			<button id="playPauseBtn" class="button fas fa-play">
+			<button id="playNextBtn" class="button fas fa-step-forward">
 		</div>
-			<marquee class="marquee"><a class="marqueetext" id="nowPlaying" href=""/></a></marquee>
+			<marquee class="marquee fadelinks"><a class="marqueetext" id="nowPlaying" href=""></a></marquee>
 		</div>
 	</nav>
 </body>
