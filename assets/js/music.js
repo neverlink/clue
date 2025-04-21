@@ -4,19 +4,19 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 var songs = [
-    "media/my toy.mp3",
-    "media/i hate you i love you.mp3",
-    "media/your name.mp3",
-    "media/autumn wind.mp3",
-    "media/von.mp3"
+    "media/ssppllaasshhiinn.mp3",
+    "media/gemini.mp3",
+    "media/go 4evr.mp3",
+    "media/sonic.mp3",
+    "media/jolly ranchers.mp3"
 ];
 
 var songLinks = [
-    "https://soundcloud.com/wazmusic/dvrst-my-toy",
-    "https://soundcloud.com/wazmusic/dvrst-i-hate-you-i-love-you",
-    "https://soundcloud.com/wazmusic/your-name",
-    "https://soundcloud.com/wazmusic/autumn-wind",
-    "https://www.youtube.com/watch?v=FTmWnjNtvc8"
+    "https://soundcloud.com/oliverxfrancis/ssppllaasshhiinn",
+    "https://soundcloud.com/oliverxfrancis/gemini-1",
+    "https://soundcloud.com/oliverxfrancis/go-4ever",
+    "https://soundcloud.com/oliverxfrancis/sonic-1",
+    "https://soundcloud.com/oliverxfrancis/jolly-ranchers"
 ];
 
 const playPause = () => {
@@ -35,7 +35,7 @@ const playSong = (index) => {
 
     index = window.currentSongIndex;
     player.src = songs[index];
-    
+
     console.log('Index requested:', index)
     console.log('Playing', songs[index])
 
@@ -49,7 +49,7 @@ const updateMarquee = () => {
     songIndex = window.currentSongIndex;
     nowPlaying.innerHTML = String(songs[songIndex].substring(6, songs[songIndex].length - 4));
     nowPlaying.href = songLinks[songIndex];
-    nowPlaying.target = "_blank"; 
+    nowPlaying.target = "_blank";
 }
 
 const setPlayerEvents = () => {
@@ -74,8 +74,8 @@ const setPlayerEvents = () => {
         //     }
         // }, 10);
         // clearInterval(fadeOut);
-    });    
-    
+    });
+
     player.addEventListener('ended', () => {
         playSong(++currentSongIndex);
     });
@@ -87,7 +87,7 @@ const setPlayerEvents = () => {
     playPauseBtn.addEventListener('click', () => {
         playPause();
     });
-    
+
     playNextBtn.addEventListener('click', () => {
         playSong(++window.currentSongIndex);
     });
